@@ -3,15 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>Your Name - Research & Astrophotography</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
 </head>
-<body class="bg-gray-100">
-    <div class="min-h-screen flex items-center justify-center">
-        <div class="text-center">
-            <h1 class="text-6xl font-bold text-gray-800 mb-4">Hello World!</h1>
-            <p class="text-xl text-gray-600">Welcome to my website</p>
+<body class="bg-gray-50">
+    <!-- Navigation -->
+    <nav class="bg-gray-800 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold">Your Name</a>
+            <div class="space-x-4">
+                <a href="#about" class="hover:text-gray-300">About</a>
+                <a href="#research" class="hover:text-gray-300">Research</a>
+                <a href="#gallery" class="hover:text-gray-300">Gallery</a>
+                <a href="#contact" class="hover:text-gray-300">Contact</a>
+            </div>
         </div>
-    </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="bg-gray-900 text-white py-20">
+        <div class="container mx-auto text-center">
+            <h1 class="text-4xl font-bold mb-4">Research & Astrophotography</h1>
+            <p class="text-xl">Graduate Researcher | Astrophotographer</p>
+        </div>
+    </header>
+
+    <!-- About Section -->
+    <section id="about" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">About Me</h2>
+            <div class="flex flex-col md:flex-row items-center gap-8">
+                <div class="md:w-1/3">
+                    <img src="/api/placeholder/400/400" alt="Profile Photo" class="rounded-full w-64 h-64 mx-auto object-cover">
+                </div>
+                <div class="md:w-2/3">
+                    <p class="text-lg mb-4">
+                        [Your introduction here - Include your academic background, research interests, and passion for astrophotography]
+                    </p>
+                    <p class="text-lg">
+                        [Additional details about your work and achievements]
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Research Section -->
+    <section id="research" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Research</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-4">Current Research</h3>
+                    <p class="mb-4">[Description of your current research project]</p>
+                    <ul class="list-disc list-inside">
+                        <li>Key finding or contribution 1</li>
+                        <li>Key finding or contribution 2</li>
+                        <li>Key finding or contribution 3</li>
+                    </ul>
+                </div>
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <h3 class="text-xl font-bold mb-4">Publications</h3>
+                    <ul class="space-y-4">
+                        <li>[Publication 1]</li>
+                        <li>[Publication 2]</li>
+                        <li>[Publication 3]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section id="gallery" class="py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Astrophotography Gallery</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <!-- Gallery Item 1 -->
+                <div class="space-y-2">
+                    <img src="/api/placeholder/400/300" alt="Astrophoto 1" class="w-full h-64 object-cover rounded">
+                    <h3 class="font-bold">Image Title</h3>
+                    <p class="text-sm text-gray-600">Technical details about the photo</p>
+                </div>
+                <!-- Gallery Item 2 -->
+                <div class="space-y-2">
+                    <img src="/api/placeholder/400/300" alt="Astrophoto 2" class="w-full h-64 object-cover rounded">
+                    <h3 class="font-bold">Image Title</h3>
+                    <p class="text-sm text-gray-600">Technical details about the photo</p>
+                </div>
+                <!-- Gallery Item 3 -->
+                <div class="space-y-2">
+                    <img src="/api/placeholder/400/300" alt="Astrophoto 3" class="w-full h-64 object-cover rounded">
+                    <h3 class="font-bold">Image Title</h3>
+                    <p class="text-sm text-gray-600">Technical details about the photo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-gray-100 py-16">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold mb-8 text-center">Contact</h2>
+            <div class="max-w-2xl mx-auto">
+                <div class="bg-white p-6 rounded-lg shadow">
+                    <p class="text-center mb-4">
+                        Feel free to reach out for research collaborations or astrophotography discussions.
+                    </p>
+                    <div class="text-center space-y-2">
+                        <p>Email: your.email@university.edu</p>
+                        <p>Department of [Your Department]</p>
+                        <p>[Your University]</p>
+                        <div class="flex justify-center space-x-4 mt-4">
+                            <a href="#" class="text-blue-600 hover:text-blue-800">LinkedIn</a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800">GitHub</a>
+                            <a href="#" class="text-blue-600 hover:text-blue-800">Twitter</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-gray-800 text-white py-8">
+        <div class="container mx-auto px-4 text-center">
+            <p>&copy; 2024 Your Name. All rights reserved.</p>
+        </div>
+    </footer>
 </body>
 </html>
